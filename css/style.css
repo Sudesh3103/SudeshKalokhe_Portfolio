@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.name h4{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 30px;
+}
+
+.home-div{
+    height: 470px;
+}
+
+.img-div{
+    height: 400px;
+}
+
+.nav-elements{
+    font-size: 18px;
+}
+.nav-elements{
+  padding: 0.3rem 0.3rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color:var(--text-dark);
+  transition: 0.7s;
+}
+
+.nav-elements:hover{
+  border-top-color: red;
+  border-bottom-color: red;
+  color: var(--secondary-color);
+}
+
+
+
+.hero-section{
+    background-image: url(../images/background/download.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #1a1a1a;
+    height: 500px;
+    width: 100%;
+}
+
+
+.typewriter h1 {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid #1a1a1a; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end) infinite alternate,
+    blink-caret .5s step-end infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #1a1a1a }
+}
+
+.heading{
+    font-size: 20px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+
+/* About Section CSS  */
+
+.bigger1{
+    font-size: 40px !important;
+    font-weight: 800;
+    line-height: 60px !important;
+}
+.hr{
+    height: 4px;
+    width: 30%;
+    margin: auto;
+    background-color: #f80521;
+}
+.about-section{
+    background-color: #1a1a1a;
+}
+
+.home-img{
+    height: 400px;
+    width: 350px;
+    
+}
+.home-img img{
+    height: 350px;
+    width: 300px;
+}
+
+.about-div{
+    animation-name: about;
+    animation-duration: 3s;
+}
+
+/* social icons start */
+.socials {
+    position: relative;
+  }
+  .socials .social-icons li {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .social-icons a {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 44px;
+    color: #ef093f;
+    background-color: #09011b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color: #0685da;
+  }
+  .social-icons a.github:hover {
+    background-color: #0e0e0e;
+  }
+  .social-icons a.twitter:hover {
+    background-color: #00aced;
+  }
+  .social-icons a.linkedin:hover {
+    background-color: #007bb6;
+  }
+  .social-icons a.dev:hover {
+    background-color: #070707;
+  }
+  .social-icons a.instagram:hover {
+    background-color: #ee00da;
+  }
+
+@keyframes about {
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+/* Education css  */
+
+.figure img{
+    height: 200px;
+    width: 300px;
+}
+
+/* Skills */
+
+.skill{
+    position: relative;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.skill1{
+    height: 150px;
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: double 3px transparent;
+    background-image: linear-gradient(#1a1a1a, #1a1a1a), radial-gradient(circle at top left, #1d5992, #9e3038);
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.skill1 img{
+    height: 75px;
+}
+.skill-name{
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+
+.arrow{
+    position: absolute;
+    left: -30px;
+    top: -11px;
+}
+
+.arrow2{
+    position: absolute;
+    top:175px ;
+}
+
+.arrow3{
+    position: absolute;
+    top: -60px;
+}
+
+.arrow4{
+    position: absolute;
+    right: 28px;
+}
+
+/* Project Section  */
+
+.project {
+    position: relative;
+    height: 240px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .project:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  @media(min-width:768px){
+    .heading{
+        font-size: 35px;
+    }
+    .arrow2{
+      top: 250px;
+    }
+    .arrow4{
+      top: 252px;
+      right: 32px;
+    }
+    .arrow{
+      top: -8px;
+    }
+    .arrow3{
+      top: -55px;
+    }
+    
+}
+
+@media(min-width:992px){
+    .heading{
+        font-size: 40px;
+    }
+    .img-div{
+      width: 350px;
+  }
+  .arrow2{
+    top: 175px;
+  }
+  .arrow4{
+    top: 177px;
+    right: 30px;
+  }
+}
+
+@media(min-width:1400px){
+  /* .heading{
+      font-size: 40px;
+  }
+  .img-div{
+    width: 350px;
+} */
+.arrow2{
+  top: 155px;
+}
+.arrow4{
+  top: 155px;
+  right: 30px;
+}
+}
+
+
+
+  
