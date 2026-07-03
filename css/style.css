@@ -37,17 +37,14 @@
   color: var(--secondary-color);
 }
 
-
-
 .hero-section{
     background-image: url(../images/background/download.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #1a1a1a;
+    background-color: #111422;
     height: 500px;
     width: 100%;
 }
-
 
 .typewriter h1 {
   color: #fff;
@@ -133,16 +130,16 @@
     background-color: #f80521;
 }
 .about-section{
-    background-color: #1a1a1a;
+    background-color: #090a10;
 }
 
 .home-img{
-    height: 400px;
+    height: 600px;
     width: 350px;
     
 }
 .home-img img{
-    width: 300px;
+    width: 350px;
 }
 
 .about-div{
@@ -205,6 +202,10 @@
 }
 
 /* Education css  */
+
+.Education-section{
+  background-color: #070707;
+}
 
 .figure img{
     height: 200px;
@@ -270,6 +271,10 @@
 }
 
 /* Project Section  */
+
+.projects{
+  background-color: #070707;
+}
 
 .project {
     position: relative;
